@@ -28,7 +28,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             Models_2025Theme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Home()
+                    HomeScreen()
                 }
             }
         }
@@ -69,7 +69,7 @@ fun Home() {
                     .border(width = 3.dp, color = Color.Black),
                 horizontalArrangement = Arrangement.SpaceEvenly
             ){
-                Column(modifier = Modifier.border(width = 1.dp, color = Color.Black)){
+                Column(modifier = Modifier.border(width = 1.dp, color = Color.Red)){
                     Text(text = "1",)
                     Text(text = "2",)
                 }
@@ -96,7 +96,7 @@ fun Home() {
 @Composable
 fun HomePreview() {
     Models_2025Theme {
-        Home()
+        HomeScreen()
     }
 }
 
